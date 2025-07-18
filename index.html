@@ -5,14 +5,14 @@
   <title>Amigo Secreto 2024</title>
   <link rel="icon" type="image/png" href="https://i.imgur.com/u71QEFc.png">
   <style>
-    body {
+  body {
       font-family: Arial, sans-serif;
       background-color: #fdf6e3;
       margin: 0;
       padding: 0;
       text-align: center;
     }
-    nav {
+  nav {
       position: fixed;
       top: 0;
       left: 0;
@@ -22,21 +22,21 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
       z-index: 9999;
     }
-    nav a {
+  nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
       font-size: 1rem;
     }
-    nav a:hover {
+  nav a:hover {
       text-decoration: underline;
     }
 
-    h1 {
+  h1 {
       margin-top: 60px;
     }
 
-    .grid {
+  .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -44,14 +44,14 @@
       padding: 30px;
     }
 
-    .row2 {
+  .row2 {
       display: flex;
       justify-content: center;
       gap: 30px;
       margin-bottom: 30px;
     }
 
-    .section-box {
+  .section-box {
       background-color: white;
       padding: 15px;
       border-radius: 12px;
@@ -59,14 +59,14 @@
       width: 300px;
     }
 
-    .container {
+  .container {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 10px;
     }
 
-    .person-box {
+  .person-box {
       background-color: #007BFF;
       color: white;
       padding: 10px 12px;
@@ -77,126 +77,187 @@
       font-size: 14px;
     }
 
-    .arrow {
+  .arrow {
       font-size: 24px;
       margin: 0 10px;
     }
 
-    .gift-image {
+  .gift-image {
       width: 100%;
       border-radius: 8px;
       transition: transform 0.3s;
     }
 
-    .gift-image:hover {
+  .gift-image:hover {
       transform: scale(1.03);
     }
+
+  #contenido {
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
   </style>
 </head>
 
 <body>
 
-  <h1>Amigo Secreto 2024</h1>
+  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+    <h1 id="btn-2024" style="cursor: pointer; background-color: #2563eb; color: white; padding: 1rem 2rem; border-radius: 12px; display: inline-block; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, transform 0.2s; font-size: 1.8rem;">
+    Amigo Secreto 2024
+    </h1>
+
+    <h1 id="btn-2025" style="cursor: pointer; background-color: #2563eb; color: white; padding: 1rem 2rem; border-radius: 12px; display: inline-block; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, transform 0.2s; font-size: 1.8rem;">
+    Amigo Secreto 2025
+    </h1>
+  </div>
 
   <nav>
     <a href="https://cornetagang.github.io/amigosecreto/">Volver al Sorteo</a>
   </nav>
 
-<div class="grid">
-    <!-- Fila 1 -->
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Dann</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Jaime</div>
-      </div>
-      <a href="https://store.steampowered.com/app/631510/Devil_May_Cry_HD_Collection/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/631510/header.jpg?t=1644282550" alt="Regalo - COD" class="gift-image" />
-      </a>
-    </div>
+  <div id="contenido" style="overflow: hidden; max-height: 0; opacity: 0; transition: max-height 0.6s ease, opacity 0.6s ease;">
+    <div id="contenido-original">
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Ariel</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Dann</div>
-      </div>
-      <a href="https://www.youtube.com/watch?v=r5pEFAm63NM" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1940340/header.jpg?t=1746646884" alt="Regalo - Juego" class="gift-image" />
-      </a>
-    </div>
+      <div class="grid">
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Dann</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Jaime</div>
+          </div>
+          <a href="https://store.steampowered.com/app/631510/Devil_May_Cry_HD_Collection/" target="_blank" rel="noopener noreferrer">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/631510/header.jpg?t=1644282550" alt="Regalo - COD" class="gift-image" />
+          </a>
+        </div>
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Jaime</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Ariel</div>
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Ariel</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Dann</div>
+          </div>
+          <a href="https://www.youtube.com/watch?v=r5pEFAm63NM" target="_blank" rel="noopener noreferrer">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1940340/header.jpg?t=1746646884" alt="Regalo - Juego" class="gift-image" />
+          </a>
+        </div>
+
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Jaime</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Ariel</div>
+          </div>
+          <a href="https://store.steampowered.com/app/312520/Rain_World/" target="_blank" rel="noopener noreferrer">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312520/header.jpg?t=1751346684" alt="Regalo - PUBG" class="gift-image" />
+          </a>
+        </div>
       </div>
-      <a href="https://store.steampowered.com/app/312520/Rain_World/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312520/header.jpg?t=1751346684" alt="Regalo - PUBG" class="gift-image" />
-      </a>
+
+      <div class="row2">
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Cata</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Lukas</div>
+          </div>
+          <a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III/" target="_blank" rel="noopener noreferrer">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1745933101" alt="Regalo - Juego" class="gift-image" />
+          </a>
+        </div>
+
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Pinilla</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Cata</div>
+          </div>
+          <a href="https://www.youtube.com/watch?v=AkJYdRGu14Y" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.imgur.com/IyaNooj.jpeg" alt="Regalo - COD" class="gift-image" />
+          </a>
+        </div>
+
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Lukas</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Pinilla</div>
+          </div>
+          <a href="https://www.vice.com/en/article/get-sifu-for-free-on-epic-games-store-hurry-though-because-its-for-a-limited-time/#:~:text=Epic%20Games%20regala%20un%20cl%C3%A1sico%20de%20kung%20fu%20de%202022&text=Sifu%20estar%C3%A1%20disponible%20gratis%20en,podr%C3%A1s%20conseguir%20el%20juego%20gratis!" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138710/header.jpg?t=1750341389" alt="Regalo - PUBG" class="gift-image" />
+          </a>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Felipe</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Chico</div>
+          </div>
+          <a href="https://store.steampowered.com/app/425220/One_Piece_Burning_Blood/" target="_blank" rel="noopener noreferrer">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/425220/header.jpg?t=1701310074" alt="Regalo - GTA V" class="gift-image" />
+          </a>
+        </div>
+
+        <div class="section-box">
+          <div class="container">
+            <div class="person-box">Chico</div>
+            <div class="arrow">➡️</div>
+            <div class="person-box">Felipe</div>
+          </div>
+          <a href="https://store.steampowered.com/sub/320795/" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.imgur.com/AGwBboO.jpeg" alt="Regalo - Cyberpunk" class="gift-image" />
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <div class="row2">
-    <!-- Fila 2 -->
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Cata</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Lukas</div>
-      </div>
-      <a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1745933101" alt="Regalo - Juego" class="gift-image" />
-      </a>
-    </div>
+  <script>
+  const btn2024 = document.getElementById("btn-2024");
+  const btn2025 = document.getElementById("btn-2025");
+  const contenido = document.getElementById("contenido");
+  const html2024 = document.getElementById("contenido-original").innerHTML;
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Pinilla</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Cata</div>
-      </div>
-      <a href="https://www.youtube.com/watch?v=AkJYdRGu14Y" target="_blank" rel="noopener noreferrer">
-        <img src="https://i.imgur.com/IyaNooj.jpeg" alt="Regalo - COD" class="gift-image" />
-      </a>
+  const html2025 = `
+    <div style="padding: 30px; font-size: 1.6rem; color: #444;">
+      🎁 ¡Próximamente! 🎄
     </div>
+  `;
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Lukas</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Pinilla</div>
-      </div>
-      <a href="https://www.vice.com/en/article/get-sifu-for-free-on-epic-games-store-hurry-though-because-its-for-a-limited-time/#:~:text=Epic%20Games%20regala%20un%20cl%C3%A1sico%20de%20kung%20fu%20de%202022&text=Sifu%20estar%C3%A1%20disponible%20gratis%20en,podr%C3%A1s%20conseguir%20el%20juego%20gratis!" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138710/header.jpg?t=1750341389" alt="Regalo - PUBG" class="gift-image" />
-      </a>
-    </div>
-  </div>
+  let abierto = null;
 
-  <div class="row2">
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Felipe</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Chico</div>
-      </div>
-      <a href="https://store.steampowered.com/app/425220/One_Piece_Burning_Blood/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/425220/header.jpg?t=1701310074" alt="Regalo - GTA V" class="gift-image" />
-      </a>
-    </div>
+  function toggleContenido(año, html, hacerScroll = true) {
+    if (abierto === año) {
+      contenido.style.maxHeight = "0";
+      contenido.style.opacity = "0";
+      abierto = null;
+    } else {
+      contenido.innerHTML = html;
+      contenido.style.maxHeight = contenido.scrollHeight + "px";
+      contenido.style.opacity = "1";
+      abierto = año;
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Chico</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Felipe</div>
-      </div>
-      <a href="https://store.steampowered.com/sub/320795/" target="_blank" rel="noopener noreferrer">
-        <img src="https://i.imgur.com/AGwBboO.jpeg" alt="Regalo - Cyberpunk" class="gift-image" />
-      </a>
-    </div>
-  </div>
+      if (hacerScroll) {
+        setTimeout(() => {
+          contenido.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 300);
+      }
+    }
+  }
+
+  btn2024.addEventListener("click", () => {
+    toggleContenido("2024", html2024, true);
+  });
+
+  btn2025.addEventListener("click", () => {
+    toggleContenido("2025", html2025, false);
+  });
+  </script>
 
 </body>
 </html>
