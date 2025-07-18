@@ -36,6 +36,18 @@
       margin-top: 60px;
     }
 
+    .hidden-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    }
+
+    .visible-content {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    }
+
     .grid {
       display: flex;
       flex-wrap: wrap;
@@ -96,107 +108,141 @@
 
 <body>
 
-  <h1>Amigo Secreto 2024</h1>
-
   <nav>
-    <a href="https://cornetagang.github.io/amigosecreto/">← Volver al Sorteo</a>
+    <a href="https://cornetagang.github.io/amigosecreto/">Volver al Sorteo</a>
   </nav>
 
-<div class="grid">
-    <!-- Fila 1 -->
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Dann</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Jaime</div>
+  <h1>Amigo Secreto 2024</h1>
+
+  <button id="toggleButton" style="
+    margin-bottom: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  ">
+    Mostrar 2024
+  </button>
+
+  <div id="content" class="hidden-content">
+    <div class="grid">
+      <!-- Fila 1 -->
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Dann</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Jaime</div>
+        </div>
+        <a href="https://store.steampowered.com/app/631510/Devil_May_Cry_HD_Collection/" target="_blank" rel="noopener noreferrer">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/631510/header.jpg?t=1644282550" alt="Devil May Cry" class="gift-image" />
+        </a>
       </div>
-      <a href="https://store.steampowered.com/app/631510/Devil_May_Cry_HD_Collection/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/631510/header.jpg?t=1644282550" alt="Regalo - COD" class="gift-image" />
-      </a>
+
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Ariel</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Dann</div>
+        </div>
+        <a href="https://store.steampowered.com/app/1940340/Mortal_Kombat_1/" target="_blank" rel="noopener noreferrer">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1940340/header.jpg?t=1746646884" alt="Mortal Kombat 1" class="gift-image" />
+        </a>
+      </div>
+
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Jaime</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Ariel</div>
+        </div>
+        <a href="https://store.steampowered.com/app/312520/Rain_World/" target="_blank" rel="noopener noreferrer">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312520/header.jpg?t=1751346684" alt="Rain World" class="gift-image" />
+        </a>
+      </div>
     </div>
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Ariel</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Dann</div>
+    <div class="row2">
+      <!-- Fila 2 -->
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Cata</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Lukas</div>
+        </div>
+        <a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III/" target="_blank" rel="noopener noreferrer">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1745933101" alt="Crusader Kings III" class="gift-image" />
+        </a>
       </div>
-      <a href="https://store.steampowered.com/app/1940340/Mortal_Kombat_1/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1940340/header.jpg?t=1746646884" alt="Regalo - Juego" class="gift-image" />
-      </a>
+
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Pinilla</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Cata</div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=AkJYdRGu14Y" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.imgur.com/IyaNooj.jpeg" alt="Regalo YouTube" class="gift-image" />
+        </a>
+      </div>
+
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Lukas</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Pinilla</div>
+        </div>
+        <a href="https://store.steampowered.com/app/2138710/Sifu/" target="_blank" rel="noopener noreferrer">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138710/header.jpg?t=1750341389" alt="Sifu" class="gift-image" />
+        </a>
+      </div>
     </div>
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Jaime</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Ariel</div>
+    <div class="row2">
+      <!-- Fila 3 -->
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Felipe</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Chico</div>
+        </div>
+        <a href="https://store.steampowered.com/app/425220/One_Piece_Burning_Blood/" target="_blank" rel="noopener noreferrer">
+          <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/425220/header.jpg?t=1701310074" alt="One Piece" class="gift-image" />
+        </a>
       </div>
-      <a href="https://store.steampowered.com/app/312520/Rain_World/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/312520/header.jpg?t=1751346684" alt="Regalo - PUBG" class="gift-image" />
-      </a>
+
+      <div class="section-box">
+        <div class="container">
+          <div class="person-box">Chico</div>
+          <div class="arrow">➡️</div>
+          <div class="person-box">Felipe</div>
+        </div>
+        <a href="https://store.steampowered.com/sub/320795/" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.imgur.com/AGwBboO.jpeg" alt="Cyberpunk Pack" class="gift-image" />
+        </a>
+      </div>
     </div>
   </div>
 
-  <div class="row2">
-    <!-- Fila 2 -->
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Cata</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Lukas</div>
-      </div>
-      <a href="https://store.steampowered.com/app/1158310/Crusader_Kings_III/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1158310/header.jpg?t=1745933101" alt="Regalo - Juego" class="gift-image" />
-      </a>
-    </div>
+  <script>
+    const button = document.getElementById('toggleButton');
+    const content = document.getElementById('content');
+    let isOpen = false;
 
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Pinilla</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Cata</div>
-      </div>
-      <a href="https://www.youtube.com/watch?v=AkJYdRGu14Y" target="_blank" rel="noopener noreferrer">
-        <img src="https://i.imgur.com/IyaNooj.jpeg" alt="Regalo - COD" class="gift-image" />
-      </a>
-    </div>
-
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Lukas</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Pinilla</div>
-      </div>
-      <a href="https://store.steampowered.com/app/2138710/Sifu/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138710/header.jpg?t=1750341389" alt="Regalo - PUBG" class="gift-image" />
-      </a>
-    </div>
-  </div>
-
-  <div class="row2">
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Felipe</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Chico</div>
-      </div>
-      <a href="https://store.steampowered.com/app/425220/One_Piece_Burning_Blood/" target="_blank" rel="noopener noreferrer">
-        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/425220/header.jpg?t=1701310074" alt="Regalo - GTA V" class="gift-image" />
-      </a>
-    </div>
-
-    <div class="section-box">
-      <div class="container">
-        <div class="person-box">Chico</div>
-        <div class="arrow">➡️</div>
-        <div class="person-box">Felipe</div>
-      </div>
-      <a href="https://store.steampowered.com/sub/320795/" target="_blank" rel="noopener noreferrer">
-        <img src="https://i.imgur.com/AGwBboO.jpeg" alt="Regalo - Cyberpunk" class="gift-image" />
-      </a>
-    </div>
-  </div>
+    button.addEventListener('click', () => {
+      if (isOpen) {
+        content.style.maxHeight = '0';
+        button.textContent = 'Mostrar 2024';
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        button.textContent = 'Ocultar';
+      }
+      isOpen = !isOpen;
+    });
+  </script>
 
 </body>
-</html>
